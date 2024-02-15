@@ -1,0 +1,151 @@
+// Рекурсия.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+// Рекурсия 
+#include <iostream>
+using namespace std;
+
+void Pop(int i) {
+    //Pop(i+1);
+    cout << i << "\n";
+    cout << "У Попа была собака, он её любил, \n";
+    cout << "Она съела кусок мясо, он её убил, \n";
+    Pop(i + 1);
+}
+
+void Pop1() {
+    int i = 1;
+    while (1) {
+        cout << i << "\n";
+        i++;
+        cout << "У Попа была собака, он её любил, \n";
+        cout << "Она съела кусок мясо, он её убил, \n";
+        cout << "Похоронил и надпись написал, \n";
+    }
+}
+
+double Fact(int n) {
+    if (n < 2)  return 1.;
+    else return Fact(n - 1) * double(n);
+}
+
+double Fact1(int i, int n) {
+    if (i == n) return (double)n;
+    else return Fact1(i + 1, n) * (double)i;
+}
+
+double Fact2(double Mult, int i, int n) {
+    Mult *= (double)i;
+    if (i == n) return Mult;
+    else return Fact2(Mult, i + 1, n);
+}
+
+double Degree(double x, int n) {
+    double r;
+    if (!n) return 1;
+    if (!(n % 2)) return r = Degree(x, n / 2), cout << "step = " << n / 2 << "\n " << " r = " << r << "\n", r* r;
+    else return r = Degree(x, n - 1), cout << "step =" << n - 1 << "\n" << " r = " << r << "\n", x* r;
+}
+
+double Degree1(double x, int n) {
+    double r;
+    if (!n) return 1;
+    if (!(n % 5)) return r = Degree1(x, n / 5), cout << "step = " << n / 5 << "\n " << " r = " << r << "\n", r* r* r* r* r;
+    else
+        if (!(n % 3)) return r = Degree1(x, n / 3), cout << "step =" << n / 3 << "\n" << " r = " << r << "\n", r* r* r;
+        else if (!(n % 2)) return r = Degree1(x, n / 2), cout << "step = " << n / 2 << "\n " << " r = " << r << "\n", r* r;
+        else return r = Degree1(x, n - 1), cout << "step =" << n - 1 << "\n" << " r = " << r << "\n", x* r;
+}
+
+void printd(long x) {
+    if (x < 0) {
+        putchar('-');
+        x = -x;
+    }
+    if (x) {
+        printd(x / 10);
+        putchar((int)x % 10 + '0');
+    }
+}
+void Revers() {
+    char c;
+    if ((c = getchar()) != '\n') {
+        Revers();
+        putchar(c);
+    }
+}
+
+
+void printd(int x) {
+    if (x<0) { putchar('-');x = -x;}
+    if (x) {printd(x / 10); putchar(x % 10 + '0');}
+}
+
+long NOD_iter(long n, long m) {
+    long r;
+    if (n < m) {
+        r = n;
+        n = m;
+        m = r;
+    }
+    while (m) {
+        r = n % m;
+        n = m;
+        m = r;
+    };
+    return n;
+}
+
+long NOD_rec(long n, long m) {
+    long r;
+    if (n < m) { r = n; n = m; m = r; }
+    if (!(r = n % m))return m;
+    return NOD_rec(m, r);
+}
+
+
+int sum(int* s, const int n) {
+    int ss;
+    if (n == 0) {
+        ss = s[0];
+        cout << "sum = " << ss << "\n";
+        return ss;
+    }
+    else {
+        ss = sum(s, n - 1) + s[n - 1];
+        cout << "sum = " << ss << "\n";
+        return ss;
+    }
+}
+
+int main()
+{
+    int i = 0, n = 15, a[20];
+    double f;
+    system("chcp 1251");
+    system("cls");
+    //Pop(i);
+    //Pop1();
+    //f=Fact(n);
+    //cout <<"n = " << n << "\n"<<"f = " << f;
+    //f=Fact1(1, n);
+    //cout << "n = " << n << "\n" << "f = " << f;
+    //f=Fact2(1., 1, n);
+    //cout << "n = " << n << "\n" << "f = " << f;
+    //cout << "Degree(1.01,180) = " << Degree(1.01,180)<<"\n";
+    //cout << "Degree1(1.01,180) =" << Degree1(1.01, 180) << "\n";
+    // Revers();
+    // printd(12345);
+//    cout << "NOD_iter(1238178, 24867) = " << NOD_iter(1238178, 24867) << "\n";
+//    cout << "NOD_rec(1238178,24867) = " << NOD_rec(1238178, 24867);
+    srand(time(NULL));
+    Revers();
+    printf("\n");
+    for (n = 1; n < 10; n++) {
+        a[n] = rand() % 10;
+        cout << "n=" << n << " a= " << a[n] << "\n";
+    }
+    cout << "summa = " << sum(a, 10);
+    return 0;
+
+}
+
+

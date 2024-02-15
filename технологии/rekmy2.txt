@@ -1,0 +1,24 @@
+#include <iostream>
+#include <stdio.h>
+#include <conio.h>
+
+using namespace std;
+
+void Digits1(int k);
+
+int main(){
+    int n=0;
+	Digits1(n);
+}
+
+void Digits1(int k) {
+	char c;
+	if (c = getchar() != '.') {
+		if(c>47 && c<58){
+		    k++;
+		}
+		putchar(c);
+		return Digits1(k);
+	}
+	cout << k;
+}

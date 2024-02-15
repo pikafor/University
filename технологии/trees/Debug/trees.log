@@ -1,0 +1,36 @@
+﻿  trees.cpp
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(7,5): error C2065: 'pNODE': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(7,11): error C2146: syntax error: missing ';' before identifier 'p'
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(7,11): error C2065: 'p': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(7,14): error C2065: 'root': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(9,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(10,5): error C2065: 'root': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(10,34): error C2065: 'root': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(10,12): error C3861: 'addnode': identifier not found
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(12,9): error C2065: 'root': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(12,38): error C2065: 'root': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(12,16): error C3861: 'addnode': identifier not found
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(14,12): error C2065: 'root': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(14,5): error C3861: 'Nnodes': identifier not found
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(17,12): error C2065: 'root': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(17,5): error C3861: 'Height': identifier not found
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(18,12): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(20,14): error C2065: 'root': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(20,5): error C3861: 'preorder': identifier not found
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(22,15): error C2065: 'root': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(22,5): error C3861: 'postorder': identifier not found
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(24,13): error C2065: 'root': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(24,5): error C3861: 'inorder': identifier not found
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(29,9): error C2065: 'p': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(29,23): error C2065: 'root': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(29,13): error C3861: 'find_tree': identifier not found
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(31,9): error C2065: 'p': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(32,45): error C2065: 'p': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(32,16): warning C4473: 'printf' : not enough arguments passed for format string
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(32,16): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(32,16): message : the missing variadic argument 2 is required by format string '%d'
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(34,5): error C2065: 'root': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(34,21): error C2065: 'root': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(34,12): error C3861: 'del_tree': identifier not found
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(35,14): error C2065: 'root': undeclared identifier
+C:\Users\0Pentry\source\repos\trees\trees\trees.cpp(35,5): error C3861: 'preorder': identifier not found

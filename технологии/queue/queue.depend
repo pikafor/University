@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1652896120 source:c:\users\pronu\desktop\codeblokc\queue\main.cpp
+	<iostream>
+	<cstdio>
+	"stdio.h"
+	"conio.h"
+	"malloc.h"
+

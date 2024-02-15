@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1652896554 source:c:\users\pronu\desktop\codeblokc\spiskii\spiski\main.cpp
+	"stdio.h"
+	"conio.h"
+	"malloc.h"
+
